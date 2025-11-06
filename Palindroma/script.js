@@ -1,7 +1,7 @@
 const playButton = document.getElementById('play-button');
 playButton.addEventListener('click', palindroma);
 
-// Controlla se la parola inserita è palindroma in modo più conciso
+// Controlla se la parola inserita è palindroma
 function isPalindroma(parola) {
   const parolaPulita = parola.toLowerCase().replace(/\s+/g, '');
   // Log della parola inserita pulita dagli spazi
