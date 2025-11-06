@@ -37,21 +37,22 @@ function pariDispari() {
 
   // 3. Generiamo un numero random per il computer
   const cpuNumber = getRandomNumber();
+  alert('Il computer ha scelto: ' + cpuNumber);
 
   // 4. Sommiamo i due numeri
   const sum = userNumber + cpuNumber;
-  console.log(`La somma di ${userNumber} e ${cpuNumber} è:`, sum);
+  console.log(`La somma di ${userNumber} + ${cpuNumber} è:`, sum);
 
   // 5. Stabiliamo se la somma è pari o dispari
   const result = isEven(sum) ? 'pari' : 'dispari';
-  console.log(`La somma (${sum}) è ${result}.`);
+  console.log(`Il risultato (${sum}) è ${result}.`);
 
   // 6. Dichiariamo chi ha vinto
   if (result === userChoice) {
-    alert(`Hai vinto! La somma è ${sum} (${result})`);
+    alert(`Hai vinto! La somma dei numeri scelti è ${sum} (${result})`);
     console.log("L'utente ha vinto!");
   } else {
-    alert(`Hai perso! La somma è ${sum} (${result})`);
+    alert(`Hai perso! La somma dei numeri scelti è ${sum} (${result})`);
     console.log("L'utente ha perso!");
   }
 }
