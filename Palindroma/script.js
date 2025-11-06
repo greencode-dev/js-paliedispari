@@ -1,15 +1,7 @@
 const playButton = document.getElementById('play-button');
 playButton.addEventListener('click', palindroma);
 
-function isPalindroma(parola) {
-  const parolaInserita = parola.toLowerCase().replace(/\s/g, '');
-  const parolaInvertita = parolaInserita.split('').reverse().join('');
-  console.log('Parola invertita:', parolaInvertita);
-  const risultato = parolaInserita === parolaInvertita;
-  console.log('La parola è palindroma?', risultato);
-  return risultato;
-}
-
+//Chiedi all'utente di inserire una parola e controlla se è palindroma
 function palindroma() {
   const parolaUtente = prompt('Inserisci una parola per verificare se è palindroma:');
   console.log("Parola inserita dall'utente:", parolaUtente);
@@ -25,4 +17,14 @@ function palindroma() {
   } else {
     alert('Non hai inserito nessuna parola.');
   }
+}
+
+//Controlla se la parola inserita è palindroma
+function isPalindroma(parola) {
+  const parolaInserita = parola.toLowerCase().replace(/\s/g, '');
+  const parolaInvertita = parolaInserita.split('').reverse().join('');
+  console.log('Parola invertita:', parolaInvertita);
+  const risultato = parolaInserita === parolaInvertita;
+  console.log('La parola è palindroma?', risultato);
+  return risultato;
 }
