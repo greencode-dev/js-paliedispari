@@ -28,12 +28,12 @@ function pariDispari() {
   // 2. L'utente inserisce un numero da 1 a 5
   let userNumber;
   do {
-    userNumber = parseInt(prompt('Inserisci un numero da 1 a 5'));
+    userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
     if (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
       alert('Numero non valido. Inserisci un numero da 1 a 5.');
     }
   } while (isNaN(userNumber) || userNumber < 1 || userNumber > 5);
-  console.log("L'utente ha inserito il numero:", userNumber);
+  console.log("L'utente ha scelto il numero:", userNumber);
 
   // 3. Generiamo un numero random per il computer
   const cpuNumber = getRandomNumber();
