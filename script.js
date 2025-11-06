@@ -45,6 +45,15 @@ function pariDispari() {
   // 5. Stabiliamo se la somma è pari o dispari
   const result = isEven(sum) ? 'pari' : 'dispari';
   console.log(`La somma (${sum}) è ${result}.`);
+
+  // 6. Dichiariamo chi ha vinto
+  if (result === userChoice) {
+    alert(`Hai vinto! La somma è ${sum} (${result})`);
+    console.log("L'utente ha vinto!");
+  } else {
+    alert(`Hai perso! La somma è ${sum} (${result})`);
+    console.log("L'utente ha perso!");
+  }
 }
 
 const playButton = document.getElementById('play-button');
